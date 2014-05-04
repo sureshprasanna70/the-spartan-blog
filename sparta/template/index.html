@@ -3,9 +3,21 @@
 <head>
 	{% include 'css.html' %}
 	<title>{{title}}</title>
+	<script>
+	var allpost={{content|safe}}
+	console.log(allpost["0"])
+	</script>
 	</head>
 	<body>
-		{{content}}
+
+		{%for simple in content%}
+		{{simple}}<br>
+		{%endfor%}
+		{%for single_title in title%}
+		{{single_title}}<br>
+		{%endfor%}
+		
+		
 		{% include 'scripts.html' %}
 	</body>
 </html>
