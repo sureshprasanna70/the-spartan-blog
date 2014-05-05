@@ -10,7 +10,7 @@ def index(request):
 	All_title=[]
 	All_post=[]
 	for i in range(0,publisher):
-			All_title.append(Blog_Post.objects.all()[i].title)
+			All_title.append([Blog_Post.objects.all()[i].title,Blog_Post.objects.all()[i].contents])
 			All_post.append(Blog_Post.objects.all()[i].contents)
 	#return HttpResponse(contents)
 	

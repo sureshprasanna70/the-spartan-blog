@@ -10,8 +10,9 @@
 	</head>
 	<body>
 
-		{%for simple in content%}
-		{{simple}}<br>
+		{%for simple in title%}
+		{{simple.0}}<br>
+		{{simple.1}}
 		{%endfor%}
 		{%for single_title in title%}
 		{{single_title}}<br>
