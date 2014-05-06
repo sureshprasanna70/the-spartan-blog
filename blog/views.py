@@ -8,5 +8,8 @@ def index(request):
 	All_post=[]
 	for i in range(0,publisher):
 			All_post.append([Blog_Post.objects.all()[i].title,Blog_Post.objects.all()[i].contents])
-			
-	return render_to_response('index.html', {'title':"Spartanz Blog",'content':All_post,'totalCount':i})
+	return render_to_response('blogindex.html', {'title':"BLOG",'content':All_post,'totalCount':i})
+def blogadmin(request):
+	return render_to_response('blogadmin.html')
+	
+

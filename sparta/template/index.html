@@ -2,35 +2,46 @@
 <html>
 	<head>
 			{% include 'css.html' %}
-			<title>{{title}}</title>
-			<script>
-
-			</script>
+			<title>CEG SPARTANZ|{{title}}</title>
+			
 	</head>
 	<body>
 		<div class="row">
 				{% include 'navbar.html' %}
 				<div class="row">
 					<br>
-					<div class="large-12 columns large-offset-4">
-						Welcome to the CEG SPARTANZ Blog
+					<div class="large-12 columns large-offset-3">
+						Welcome to the official site of CEG SPARTANZ
 					</div>
 				</div>
-				<br>
-				<div class="row">
-					{%for simple in content%}
-						<div class="large-12 columns">
-							{{simple.0}} <!--Heading-->
-						</div>
-						<div class="large-12 columns">
-							{{simple.1}}<!--Content-->
-
-						</div>
-						<br><br><br>	
-					{%endfor%}
+					<ul class="example-orbit" data-orbit>
+  <li>
+    <img src="../assets/img/examples/satelite-orbit.jpg" alt="slide 1" />
+    <div class="orbit-caption">
+      Caption One.
+    </div>
+  </li>
+  <li class="active">
+    <img src="http://foundation.zurb.com/docs/assets/img/examples/launch-orbit.jpg" alt="slide 2" />
+    <div class="orbit-caption">
+      Caption Two.
+    </div>
+  </li>
+  <li>
+    <img src="../assets/img/examples/launch-orbit.jpg" alt="slide 3" />
+    <div class="orbit-caption">
+      Caption Three.
+    </div>
+  </li>
+</ul>
+  </div>
 				</div>
+				<br>
+				
 		</div>
 		{% include 'scripts.html' %}
+		<script src="assets/js/foundation.orbit.js">
+
+			</script>
 	</body>
 </html>
-

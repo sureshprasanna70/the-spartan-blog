@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			{% include 'css.html' %}
+			<title>CEG SPARTANZ|{{title}}</title>
+			<script>
+
+			</script>
+	</head>
+	<body>
+		<div class="row">
+				{% include 'navbar.html' %}
+				<div class="row">
+					<br>
+					<div class="large-12 columns large-offset-4">
+						Welcome to the Admin area<br>
+
+					</div>
+					<div class="row">
+						<br>
+						<br>
+						<br>
+						<br>
+					<div class="small-6 columns small-offset-2">
+							Remember these
+						<li>Enter the title and content.Click Save.</li>
+						<li>Once u click save it will be posted on the blog directly</li>
+
+					</div>
+					</div>
+					<div class="row"> 
+						<br>	
+					<div class="large-6 columns">
+						<input type="text" size="15" placeholder="TITLE"/>
+					</div>
+
+					<div class="large-12 columns">
+						<textarea rows="8" cols="15" placeholder="CONTENT"></textarea>
+					</div>
+					<div class="large-3 columns left">
+						<input type="submit" class="button [alert success secondary]" value="Save and Post">
+						<input type="Reset" class="button [secondary alert success]" value="Clear fields">
+
+					</div>
+				</div>
+				<br>
+				
+		</div>
+		{% include 'scripts.html' %}
+	</body>
+</html>
