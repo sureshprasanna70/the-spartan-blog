@@ -8,6 +8,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index/', 'blog.views.index'),
+    url(r'^blog/', 'blog.views.index'),
     url(r'^$', 'sparta.views.index', name='home'),
 
 )

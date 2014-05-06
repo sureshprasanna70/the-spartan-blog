@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	{% include 'css.html' %}
-	<title>{{title}}</title>
-	<script>
-	
-	</script>
+	<head>
+			{% include 'css.html' %}
+			<title>{{title}}</title>
+			<script>
+
+			</script>
 	</head>
 	<body>
+		<div class="row">
+				{% include 'navbar.html' %}
+				<div class="row">
+					<br>
+					<div class="large-12 columns large-offset-4">
+						Welcome to the CEG SPARTANZ Blog
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					{%for simple in content%}
+						<div class="large-12 columns">
+							{{simple.0}} <!--Heading-->
+						</div>
+						<div class="large-12 columns">
+							{{simple.1}}<!--Content-->
 
-		{%for simple in content%}
-		{{simple.0}}<br>
-		{{simple.1}}
-		{%endfor%}
-		
-		
-		
-		
+						</div>
+						<br><br><br>	
+					{%endfor%}
+				</div>
+		</div>
 		{% include 'scripts.html' %}
 	</body>
 </html>
