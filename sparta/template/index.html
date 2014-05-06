@@ -4,19 +4,17 @@
 	{% include 'css.html' %}
 	<title>{{title}}</title>
 	<script>
-	var allpost={{content|safe}}
-	console.log(allpost["0"])
+	
 	</script>
 	</head>
 	<body>
 
-		{%for simple in title%}
+		{%for simple in content%}
 		{{simple.0}}<br>
 		{{simple.1}}
 		{%endfor%}
-		{%for single_title in title%}
-		{{single_title}}<br>
-		{%endfor%}
+		
+		
 		
 		
 		{% include 'scripts.html' %}
